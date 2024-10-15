@@ -3,7 +3,7 @@ import { db } from '../../db/connection'
 import { restaurants, users } from '../../db/schema'
 
 export const registerRestaurante = new Elysia().post(
-  '/restaurantes',
+  '/restaurants',
   async ({ body, set }) => {
     const { restaurantName, managerName, email, phone } = body
     const [manager] = await db
