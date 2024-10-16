@@ -24,7 +24,6 @@ export const sendAuthLink = new Elysia().post(
       code: authLinkCode,
     })
 
-
     const authLink = new URL('/auth-links/authenticate', env.API_BASE_URL)
 
     authLink.searchParams.set('code', authLinkCode)
