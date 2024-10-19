@@ -10,6 +10,7 @@ import { getOrderDetails } from './routes/get-order-details'
 import { cancelOrder } from './routes/cancel-order'
 import { deliverOrder } from './routes/deliver-order'
 import { dispatchOrder } from './routes/dispatch-order'
+import { getOrders } from './routes/get-orders'
 
 const app = new Elysia()
   .use(cookie())
@@ -23,6 +24,7 @@ const app = new Elysia()
   .use(cancelOrder)
   .use(deliverOrder)
   .use(dispatchOrder)
+  .use(getOrders)
   .onError(({ code, error, set }) => {
     switch (code) {
       case 'VALIDATION': {

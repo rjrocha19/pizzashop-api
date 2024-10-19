@@ -20,6 +20,7 @@
     "chalk": "^5.3.0",
     "dayjs": "^1.11.13",
     "drizzle-orm": "^0.34.1",
+    "drizzle-typebox": "^0.1.1",
     "elysia": "^1.1.22",
     "nodemailer": "^6.9.15",
     "postgres": "^3.4.4",
